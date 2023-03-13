@@ -16,12 +16,12 @@ const display_Entries = () => {
   const entries = form_Data();
   const tableEntries = entries
     .map((entry) => {
-      const nameInput = `<td class='border px-4 py-2'>${entry.name}</td>`;
-      const emailInput = `<td class='border px-4 py-2'>${entry.email}</td>`;
-      const passwordInput = `<td class='border px-4 py-2'>${entry.password}</td>`;
-      const dobInput = `<td class='border px-4 py-2'>${entry.dob}</td>`;
-      const acceptTermsInput = `<td class='border px-4 py-2'>${entry.acceptedTC}</td>`;
-      const row = `<tr>${nameInput} ${emailInput} ${passwordInput} ${dobInput} ${acceptTermsInput}</tr>`;
+      const nameField = `<td class='border px-4 py-2'>${entry.name}</td>`;
+      const emailField = `<td class='border px-4 py-2'>${entry.email}</td>`;
+      const passwordField = `<td class='border px-4 py-2'>${entry.password}</td>`;
+      const dobField = `<td class='border px-4 py-2'>${entry.dob}</td>`;
+      const acceptTermsField = `<td class='border px-4 py-2'>${entry.acceptedTC}</td>`;
+      const row = `<tr>${nameField} ${emailField} ${passwordField} ${dobField} ${acceptTermsField}</tr>`;
       return row;
     })
     .join("\n");
